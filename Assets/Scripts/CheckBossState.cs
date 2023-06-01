@@ -32,6 +32,7 @@ public class CheckBossState : MonoBehaviour
         if (object1Destroyed && object2Destroyed)
         {
             Debug.Log("Oba Boss-a su.");
+            Time.timeScale = 0f;
             winImage.SetActive(true);
             // Možete ovdje izvršiti dodatne radnje koje želite nakon što oba objekta nestanu
         }
