@@ -48,6 +48,8 @@ public class MainSceneManager : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 1.0f;
+
         // Postavljanje početne vrijednosti slidera na trenutnu glasnoću
         volumeSlider.value = PlayerPrefs.GetFloat("MusicVolume", 0.5f);
 

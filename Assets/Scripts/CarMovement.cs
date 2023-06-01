@@ -18,6 +18,12 @@ public class CarMovement : MonoBehaviour
 
     public GameObject carDriveSound;
 
+    public AudioSource stuntWithEnemySound;
+
+    public Camera mainCamera;
+
+    public Camera backCamera;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -32,7 +38,7 @@ public class CarMovement : MonoBehaviour
         float turnInput = Input.GetAxis("Horizontal");
 
         // Provjera dodatnog ubrzanja pomoću tipke Shift
-        if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+        if (Input.GetKey(KeyCode.LeftShift))
         {
             moveInput *= shiftSpeedMultiplier;
             nitro.SetActive(true);
@@ -68,12 +74,25 @@ public class CarMovement : MonoBehaviour
         rb.MoveRotation(rb.rotation * rotation);
     }
 
-    private void Update()
+    public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        //Kamera
+        if (Input.GetKey(KeyCode.V))
         {
-            inGameSettings.SetActive(true);
-            Time.timeScale = 0f;
+            mainCamera.enabled = false;
+            backCamera.enabled = true;
+        }
+        //Otvori podesavanja i stavi vreme na 0
+        else if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            inGameSettings.SetActive(true);//kaze samo da je active game object ,isto to je moglo i na drugaciji nacin tipa umesto GameObject InGameSetting,motao sam da stavim Image InGameSettings pa unutar Update samo InGameSettings.enabled = true;
+            Time.timeScale = 0f;//vreme na 0
+        }
+        //Kamera
+        else
+        {
+            mainCamera.enabled = true;
+            backCamera.enabled = false;
         }
     }
 
@@ -86,5 +105,13 @@ public class CarMovement : MonoBehaviour
     public void GoToMenu()
     {
         SceneManager.LoadScene("MainScene");
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Wave1" || other.tag == "Wave2" || other.tag == "WaveBoss")//Ako colide sa objektima sa tim tagom aktivira se Stunt sound 
+        {
+            stuntWithEnemySound.Play();
+        }
     }
 }

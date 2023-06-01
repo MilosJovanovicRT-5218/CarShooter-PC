@@ -16,8 +16,12 @@ public class CarHealth : MonoBehaviour
 
     public GameObject gun1, gun2;
 
+    public AudioSource pickHealthSound;
+
     private void Start()
     {
+        Time.timeScale = 1.0f;
+
         currentHealth = maxHealth;
         healthSlider.maxValue = maxHealth;
         healthSlider.value = currentHealth;
@@ -31,6 +35,7 @@ public class CarHealth : MonoBehaviour
 
         if (currentHealth <= 0)
         {
+            Time.timeScale = 0f;
             Die();
         }
 
@@ -69,6 +74,7 @@ public class CarHealth : MonoBehaviour
         {
             currentHealth += 5;
             Destroy(other.gameObject);
+            pickHealthSound.Play();
         }
     }
 

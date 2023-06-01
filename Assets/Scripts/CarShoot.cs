@@ -11,7 +11,7 @@ public class CarShoot : MonoBehaviour
     public AudioSource shootSound;
     //public AudioSource audioShoot;//Shoot sound
 
-    public void FixedUpdate()
+    public void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
