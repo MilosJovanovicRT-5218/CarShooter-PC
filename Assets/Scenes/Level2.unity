@@ -3401,7 +3401,7 @@ Transform:
   - {fileID: 574066406}
   - {fileID: 324205549}
   m_Father: {fileID: 1038434811}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &122738315
 AudioSource:
@@ -4762,7 +4762,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1038434811}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &176021856
 PrefabInstance:
@@ -13462,7 +13462,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1038434811}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 27.3, y: 180, z: 0}
 --- !u!1 &566647103 stripped
 GameObject:
@@ -15065,7 +15065,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &643382760 stripped
 GameObject:
@@ -23126,7 +23126,7 @@ Transform:
   - {fileID: 1789510266}
   - {fileID: 310121048}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1002199097 stripped
 GameObject:
@@ -23895,7 +23895,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4133846400906858, guid: a69aaa6f1646fdb4f99dcc9991ae4655, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4133846400906858, guid: a69aaa6f1646fdb4f99dcc9991ae4655, type: 3}
       propertyPath: m_LocalScale.x
@@ -43121,7 +43121,7 @@ Transform:
   - {fileID: 1324422085}
   - {fileID: 659434434}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1539354264 stripped
 GameObject:
@@ -47612,7 +47612,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1038434811}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1721443222 stripped
 GameObject:
@@ -48111,6 +48111,7 @@ GameObject:
   - component: {fileID: 1752414482}
   - component: {fileID: 1752414484}
   - component: {fileID: 1752414483}
+  - component: {fileID: 1752414485}
   m_Layer: 0
   m_Name: Main_Camera
   m_TagString: Untagged
@@ -48125,13 +48126,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1752414481}
-  m_LocalRotation: {x: 0.23599018, y: 0, z: 0, w: 0.97175545}
-  m_LocalPosition: {x: 0, y: 15.1, z: -17.1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.2359902, y: -0, z: -0, w: 0.97175545}
+  m_LocalPosition: {x: 248.7, y: 5.13, z: 147.06999}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1038434811}
-  m_RootOrder: 9
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 27.3, y: 0, z: 0}
 --- !u!81 &1752414483
 AudioListener:
@@ -48184,6 +48185,21 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1752414485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752414481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 189e4bbc92f786e47a809b7fc8c3dc8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1038434811}
+  rotationSpeed: 5
+  distance: 9
 --- !u!1 &1753297114 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -301660052828340519, guid: 230724418ccfd4b4c89a27fc8fffcdd6, type: 3}
@@ -52068,7 +52084,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1038434811}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1952880488 stripped
 Transform:
@@ -56422,7 +56438,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1038434811}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!81 &2120190516
 AudioListener:

@@ -943,7 +943,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1021357211}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &35155639
 BoxCollider:
@@ -3382,6 +3382,7 @@ GameObject:
   - component: {fileID: 151373915}
   - component: {fileID: 151373913}
   - component: {fileID: 151373914}
+  - component: {fileID: 151373916}
   m_Layer: 0
   m_Name: Main_Camera
   m_TagString: Untagged
@@ -3447,14 +3448,30 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 151373912}
-  m_LocalRotation: {x: 0.23599018, y: 0, z: 0, w: 0.97175545}
-  m_LocalPosition: {x: 0, y: 15.1, z: -17.1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.2359902, y: -0, z: -0, w: 0.97175545}
+  m_LocalPosition: {x: 248.7, y: 5.13, z: -14.33}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1021357211}
-  m_RootOrder: 9
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 27.3, y: 0, z: 0}
+--- !u!114 &151373916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151373912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 189e4bbc92f786e47a809b7fc8c3dc8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1021357211}
+  rotationSpeed: 5
+  distance: 9
+  desiredHeight: 5.13
 --- !u!65 &151689556
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7277,7 +7294,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4133846400906858, guid: a69aaa6f1646fdb4f99dcc9991ae4655, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4133846400906858, guid: a69aaa6f1646fdb4f99dcc9991ae4655, type: 3}
       propertyPath: m_LocalScale.x
@@ -16898,7 +16915,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1021357211}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 27.3, y: 180, z: 0}
 --- !u!1 &844595296
 GameObject:
@@ -24455,7 +24472,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1021357211}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!81 &1236992279
 AudioListener:
@@ -27379,7 +27396,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1021357211}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1394468064 stripped
 GameObject:
@@ -27947,7 +27964,7 @@ Transform:
   - {fileID: 1584467204}
   - {fileID: 2115175047}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1412501832
 BoxCollider:
@@ -36544,7 +36561,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1021357211}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1783021196
 BoxCollider:
@@ -39186,7 +39203,7 @@ Transform:
   - {fileID: 852353677}
   - {fileID: 1443903537}
   m_Father: {fileID: 1021357211}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1911581024
 AudioSource:
@@ -39812,7 +39829,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 230724418ccfd4b4c89a27fc8fffcdd6, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 230724418ccfd4b4c89a27fc8fffcdd6, type: 3}
       propertyPath: m_LocalScale.x
@@ -56672,7 +56689,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1021357211}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 16.43, y: 0, z: 0}
 --- !u!108 &2004216698
 Light:
@@ -57659,7 +57676,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1021357211}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 16.43, y: 0, z: 0}
 --- !u!108 &2054787171
 Light:

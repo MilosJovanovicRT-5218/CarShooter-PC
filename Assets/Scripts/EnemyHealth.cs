@@ -47,7 +47,7 @@ public class EnemyHealth : MonoBehaviour
 
         if (other.gameObject.tag == "Player")//Ako ako colide sa objektom koji ima tag Player onda...
         {
-            TakeDamage(50); // ako plauer udari Ai/Enemy skine mu -50 na health
+            TakeDamage(20); // ako plauer udari Ai/Enemy skine mu -50 na health
         }
     }
 

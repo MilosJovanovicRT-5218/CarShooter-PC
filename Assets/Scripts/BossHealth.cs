@@ -50,6 +50,11 @@ public class BossHealth : MonoBehaviour
         {
             TakeDamage(3); // skidanje 20 zdravlja nakon udarca metka
         }
+
+        if (other.gameObject.tag == "Player")
+        {
+            TakeDamage(20); // skidanje 20 zdravlja nakon udarca metka
+        }
     }
 
     private void UpdateHealthBar()
